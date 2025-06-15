@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Denomination-Specific & Local Resources</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      font-family: 'Lato', sans-serif, 'Microsoft YaHei';
+    }
+
+    .slide {
+      width: 1280px;
+      height: 720px;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      padding: 50px 60px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 48px;
+      color: #3f51b5; /* A rich blue */
+      font-weight: 900;
+      margin: 0;
+      line-height: 1.2;
+      flex-grow: 1;
+    }
+
+    .header-image {
+      width: 220px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-left: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      border: 3px solid white;
+    }
+
+    .content {
+      display: flex;
+      flex-grow: 1;
+      gap: 50px;
+    }
+
+    .column {
+      flex: 1;
+      padding-top: 10px;
+    }
+
+    .column h2 {
+      font-size: 36px; /* Approx 28pt */
+      color: #5c6bc0; /* A slightly lighter purple/blue */
+      font-weight: 700;
+      margin-bottom: 25px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #9fa8da;
+    }
+
+    .column ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .column li {
+      font-size: 28px; /* Approx 24pt */
+      color: #333;
+      margin-bottom: 20px;
+      line-height: 1.5;
+      display: flex;
+      align-items: flex-start;
+      animation: fadeInItem 0.5s ease-out forwards;
+      opacity: 0;
+    }
+    
+    .column li::before {
+      content: '✔';
+      color: #3f51b5;
+      font-weight: bold;
+      margin-right: 15px;
+      font-size: 24px;
+      line-height: 1.5;
+    }
+    
+    .column li:nth-child(1) { animation-delay: 0.2s; }
+    .column li:nth-child(2) { animation-delay: 0.4s; }
+    .column li:nth-child(3) { animation-delay: 0.6s; }
+    .column li:nth-child(4) { animation-delay: 0.8s; }
+
+    .pro-tip {
+      position: absolute;
+      bottom: 40px;
+      left: 60px;
+      right: 60px;
+      background-color: #e8eaf6; /* Light indigo */
+      border-left: 6px solid #3f51b5;
+      padding: 20px 25px;
+      border-radius: 0 8px 8px 0;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 15px rgba(63, 81, 181, 0.15);
+      animation: slideUpTip 0.6s ease-out 1s forwards;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .pro-tip-label {
+      font-weight: 700;
+      color: #3f51b5;
+      margin-right: 15px;
+      font-size: 26px;
+    }
+
+    .pro-tip-text {
+      font-size: 24px;
+      color: #1a237e;
+    }
+
+    @keyframes fadeInItem {
+      to {
+        opacity: 1;
+      }
+    }
+    
+    @keyframes slideUpTip {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <header class="header">
+      <h1>Denomination-Specific &amp; Local Resources</h1>
+      <img src="images/historic_church.jpg" alt="A historic church building" class="header-image">
+    </header>
+
+    <main class="content">
+      <div class="column">
+        <h2>Denomination Sites</h2>
+        <ul>
+          <li>AME Church Archives Online</li>
+          <li>Baptist Historical Collections</li>
+          <li>Presbyterian Historical Society</li>
+          <li>Methodist Archives</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h2>Local Digital Libraries</h2>
+        <ul>
+          <li>State archives websites</li>
+          <li>University special collections</li>
+          <li>County historical societies</li>
+          <li>City library digital collections</li>
+        </ul>
+      </div>
+    </main>
+
+    <div class="pro-tip">
+      <span class="pro-tip-label">Pro Tip:</span>
+      <span class="pro-tip-text">Search "[State name] digital archives church records"</span>
+    </div>
+    
+    <!--
+      SPEAKER NOTES:
+      - Time: 2 minutes for this slide
+      - Explain: "Different denominations kept different types of records, so it's worth checking their specific archives. For example, some focused on baptismal records, while others have detailed meeting minutes."
+      - Tip: "State university libraries, especially land-grant universities, often have amazing digital collections that include local histories, newspapers, and family papers. Don't overlook them."
+      - Share: "Also, don't forget local historical and genealogical societies. They often have unique, non-digitized collections that you won't find anywhere else. A quick visit to their website can reveal their holdings."
+      - Encourage: "If you can't find what you're looking for online, email the local archivists or librarians. They are experts on their collections and are usually very helpful and happy to point you in the right direction."
+    -->
+  </div>
+</body>
+</html>

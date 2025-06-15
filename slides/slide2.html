@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Church Records Are 'Hidden Treasures'</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .slide {
+      width: 1280px;
+      height: 720px;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 80px;
+      box-sizing: border-box;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .content {
+      width: 55%;
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 56px; /* Approx 42pt, but looks better scaled */
+      color: #005A9C;
+      margin-top: 0;
+      margin-bottom: 50px;
+      line-height: 1.2;
+      animation: fadeIn 1s ease-out 0.2s forwards;
+      opacity: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 35px;
+      font-size: 28px; /* Approx 21pt, better on screen */
+      color: #333333;
+      line-height: 1.5;
+      animation: fadeIn 1s ease-out forwards;
+      opacity: 0;
+    }
+
+    li:nth-child(1) { animation-delay: 0.4s; }
+    li:nth-child(2) { animation-delay: 0.6s; }
+    li:nth-child(3) { animation-delay: 0.8s; }
+    li:nth-child(4) { animation-delay: 1.0s; }
+
+
+    .icon {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+      flex-shrink: 0;
+      margin-top: 5px;
+      color: #007BFF;
+    }
+
+    .visual {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      animation: fadeIn 1s ease-out 1.2s forwards;
+      opacity: 0;
+    }
+
+    .document-stack {
+        position: relative;
+        width: 350px;
+        height: 450px;
+    }
+
+    .document {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #fdfaf2;
+        border: 1px solid #e0dccc;
+        box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
+        padding: 20px;
+        box-sizing: border-box;
+        font-family: 'Courier New', monospace;
+        color: #706a5c;
+        font-size: 10px;
+        line-height: 1.4;
+        overflow: hidden;
+    }
+    
+    .document::before {
+        content: 'Parish Register of St. Mary\'s Church\A Baptisms, 1823\A\A John Smith, son of Thomas & Mary Smith, bapt. 12 Jan\A Elizabeth Jones, daughter of David & Anne Jones, bapt. 19 Jan\A William Davis, son of William & Sarah Davis, bapt. 2 Feb\A\A Marriages, 1823\A\A Thomas Williams to Jane Roberts, 5 Apr\A Richard Evans to Catherine Lewis, 17 May\A\A Burials, 1823\A\A Margaret Hughes, aged 72, buried 20 Mar\A Infant son of Edward Price, buried 30 Mar';
+        white-space: pre;
+    }
+
+    .document1 {
+        transform: rotate(-5deg);
+        top: 0;
+        left: 0;
+    }
+
+    .document2 {
+        background: #fbf5e9;
+        transform: rotate(3deg);
+        top: 10px;
+        left: -5px;
+    }
+    
+    .magnifying-glass {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        top: 50px;
+        left: 50px;
+        transform: rotate(20deg);
+    }
+    
+    .magnifying-glass .lens {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 15px solid #333;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .magnifying-glass .handle {
+        width: 30px;
+        height: 100px;
+        background: #333;
+        position: absolute;
+        bottom: -20px;
+        right: -10px;
+        transform: rotate(45deg);
+        border-radius: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="content">
+      <h1>Why Church Records Are 'Hidden Treasures'</h1>
+      <ul>
+        <li>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-2a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0 7C6.477 20 2 15.523 2 10S6.477 0 12 0s10 4.477 10 10-4.477 10-10 10zm0-2c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm-5.07-5.536 12.14 12.14-1.414 1.414-12.14-12.14 1.414-1.414z"/></svg>
+          <span>Often overlooked by researchers</span>
+        </li>
+        <li>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11 14.062V22H4a1 1 0 0 1-1-1v-7.938A8.001 8.001 0 0 1 11 14.062zM5 20h4v-5.937A8.001 8.001 0 0 1 5 14.062V20zm8-1.938A8.001 8.001 0 0 1 21 13.062V21a1 1 0 0 1-1 1h-7v-7.938zM15 20h4v-5.937A8.001 8.001 0 0 1 15 14.062V20zM12 2a5 5 0 0 1 5 5v3.062A8.001 8.001 0 0 1 12 12a8.001 8.001 0 0 1-5-1.938V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v3.544A7.965 7.965 0 0 1 12 10a7.965 7.965 0 0 1 3-1.456V7a3 3 0 0 0-3-3z"/></svg>
+          <span>Rich with family details</span>
+        </li>
+        <li>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 10h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V11a1 1 0 0 1 1-1h1V9a7 7 0 1 1 14 0v1zM5 12v8h14v-8H5zm6 2h2v4h-2v-4zm6-4V9A5 5 0 0 0 7 9v1h10z"/></svg>
+          <span>Available when other records aren't</span>
+        </li>
+        <li>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21 4H3a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1zM5 18S9 13 12 13s7 5 7 5H5zM12 7a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg>
+          <span>Community stories preserved</span>
+        </li>
+      </ul>
+    </div>
+    <div class="visual">
+        <div class="document-stack">
+            <div class="document document2"></div>
+            <div class="document document1"></div>
+        </div>
+        <div class="magnifying-glass">
+            <div class="lens"></div>
+            <div class="handle"></div>
+        </div>
+    </div>
+  </div>
+
+  <!--
+    SPEAKER NOTES:
+    - Time: 2 minutes for this slide
+    - Share story: "Most people start with census records and get stuck. They hit what we call a 'brick wall'. But there's a source many people forget about, a true hidden treasure..."
+    - Explain: "Churches. For centuries, long before governments started keeping consistent vital records, churches were meticulously recording the key events in a person's life: baptisms, marriages, and burials."
+    - Engage audience: "Raise your hand if you've ever been to a church service, a wedding, a christening, or a funeral." (Pause for hands) "Those events were likely recorded, creating a trail for us to follow."
+    - Emphasize: "These records are often more detailed than civil records and can survive when government documents have been lost to fire or flood. They can be the key to breaking through your brick walls and connecting with your ancestors on a more personal level."
+  -->
+</body>
+</html>

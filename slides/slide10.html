@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paid Resources for Church Records Research</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Lato', 'Noto Sans SC', sans-serif;
+    }
+
+    .slide {
+      width: 1280px;
+      height: 720px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      padding: 40px 60px;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slide h1 {
+      font-size: 52px; /* A bit larger than 28pt for a main title */
+      color: #333333;
+      text-align: center;
+      margin: 0 0 30px 0;
+      font-weight: 700;
+    }
+
+    .content-area {
+      display: flex;
+      flex-grow: 1;
+      gap: 40px;
+    }
+
+    .column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .left-column {
+      flex: 1.2;
+    }
+
+    .right-column {
+      flex: 0.8;
+      gap: 20px;
+    }
+
+    h2 {
+      font-size: 34px; /* Around 28pt */
+      font-weight: 700;
+      margin: 0 0 20px 0;
+      border-bottom: 3px solid;
+      padding-bottom: 10px;
+    }
+    
+    .paid-title {
+        color: #D35400; /* Orange/Amber */
+        border-color: #F39C12;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      font-size: 28px; /* 24pt */
+      color: #4A4A4A;
+      margin-bottom: 20px;
+      padding-left: 40px;
+      position: relative;
+      line-height: 1.4;
+    }
+
+    li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      font-size: 32px;
+      line-height: 1.3;
+    }
+    
+    .paid-list li::before {
+        color: #E67E22; /* Orange/Amber */
+    }
+
+    .paid-list strong {
+        color: #333;
+    }
+
+    .paid-list span {
+        font-size: 22px;
+        color: #666;
+        display: block;
+        margin-top: 2px;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 250px;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .tips-box {
+      background-color: #F1F8E9; /* Light Green */
+      border: 2px solid #8BC34A; /* Green */
+      border-radius: 8px;
+      padding: 25px;
+      margin-top: auto; /* Pushes to bottom of flex column */
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tips-box h2 {
+        color: #33691E; /* Dark Green */
+        border-color: #7CB342;
+        font-size: 30px;
+    }
+    
+    .tips-box ul li {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .tips-box li::before {
+      content: '✓';
+      color: #4CAF50; /* Green */
+      font-weight: bold;
+    }
+
+    .speaker-notes {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.75);
+      color: #ffffff;
+      padding: 15px 20px;
+      font-size: 16px;
+      line-height: 1.5;
+      opacity: 0;
+      transition: opacity 0.4s ease-in-out;
+      pointer-events: none;
+    }
+    
+    .slide:hover .speaker-notes {
+        opacity: 1;
+    }
+    
+    .speaker-notes p {
+        margin: 5px 0;
+    }
+    .speaker-notes strong {
+        color: #FBC02D;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <h1>Paid Resources (When You're Ready)</h1>
+    <div class="content-area">
+      <div class="column left-column">
+        <h2 class="paid-title">Premium Sites</h2>
+        <ul class="paid-list">
+          <li><strong>Ancestry.com</strong><span>Largest collection overall</span></li>
+          <li><strong>Newspapers.com</strong><span>Obituaries with church names</span></li>
+          <li><strong>Fold3.com</strong><span>Military and some church records</span></li>
+          <li><strong>MyHeritage.com</strong><span>Growing church collections</span></li>
+        </ul>
+      </div>
+      <div class="column right-column">
+        <div class="image-container">
+          <img src="images/archive_library.jpg" alt="Interior of a library or archive with rows of books.">
+        </div>
+        <div class="tips-box">
+          <h2>Money-Saving Tips</h2>
+          <ul>
+            <li>Try free trials first</li>
+            <li>Check if your library has subscriptions</li>
+            <li>Share subscriptions with family members</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="speaker-notes">
+      <p><strong>Reassure:</strong> "You don't need these right away - free sites have tons of records."</p>
+      <p><strong>Tip:</strong> "Many public libraries provide free access to Ancestry.com from within the library."</p>
+      <p><strong>Share:</strong> "Newspapers.com obituaries are great because they often mention the specific church name and pastor for the funeral service."</p>
+      <p><strong>Encourage:</strong> "Start with free trials to see if they have the records you need before you commit."</p>
+      <p><strong>Time:</strong> 2 minutes</p>
+    </div>
+  </div>
+</body>
+</html>

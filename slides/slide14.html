@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overcoming Common Challenges</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      width: 1280px;
+      height: 720px;
+      background-color: #ffffff;
+      font-family: 'Poppins', sans-serif;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slide {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 50px 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 44px; /* Based on 28pt for impact */
+      font-weight: 700;
+      color: #005A9C; /* Uplifting Blue */
+      margin: 0 0 30px 0;
+      border-bottom: 3px solid #4CAF50;
+      padding-bottom: 10px;
+    }
+
+    .challenges-grid {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 15px 20px;
+      width: 100%;
+      max-width: 1100px;
+      margin-bottom: 30px;
+    }
+
+    .cell {
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 26px; /* Based on 24pt */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .cell:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .challenge {
+      background-color: #E3F2FD; /* Light Blue */
+      color: #0D47A1; /* Dark Blue */
+      text-align: right;
+    }
+
+    .solution {
+      background-color: #E8F5E9; /* Light Green */
+      color: #1B5E20; /* Dark Green */
+      text-align: left;
+    }
+
+    .arrow {
+      font-size: 36px;
+      color: #4CAF50; /* Vibrant Green */
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .quotes-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1100px;
+      gap: 30px;
+    }
+
+    .quote-box {
+      flex: 1;
+      padding: 20px;
+      border: 2px solid #00796B;
+      background-color: #F1F8E9;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      font-size: 26px; /* Based on 24pt */
+      font-style: italic;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+    }
+    
+    .quote-box:hover {
+        background-color: #E0F2F1;
+    }
+
+    .quote-box img {
+      width: 70px;
+      height: auto;
+      margin-left: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <h1>Overcoming Common Challenges</h1>
+
+    <div class="challenges-grid">
+      <div class="cell challenge">Church no longer exists</div>
+      <div class="arrow">→</div>
+      <div class="cell solution">Look for merger records</div>
+
+      <div class="cell challenge">Records damaged/lost</div>
+      <div class="arrow">→</div>
+      <div class="cell solution">Check multiple churches in area</div>
+
+      <div class="cell challenge">Handwriting illegible</div>
+      <div class="arrow">→</div>
+      <div class="cell solution">Ask for help in genealogy groups</div>
+
+      <div class="cell challenge">Church name changed</div>
+      <div class="arrow">→</div>
+      <div class="cell solution">Research church histories</div>
+    </div>
+
+    <div class="quotes-container">
+      <div class="quote-box">
+        "Every small clue counts!"
+      </div>
+      <div class="quote-box">
+        <span>"Your ancestors left breadcrumbs to follow"</span>
+        <img src="images/treasure_chest.jpg" alt="Treasure Chest">
+      </div>
+    </div>
+  </div>
+
+  <!--
+    SPEAKER NOTES:
+    - Time: 2 minutes for this slide
+    - Reassure: "Everyone hits these challenges - you're not alone. This is a normal part of the research process."
+    - Share: "Online genealogy communities, like Facebook groups or forums, are incredibly helpful and supportive. Don't hesitate to post a photo of difficult handwriting - you'll be amazed at how quickly someone can decipher it."
+    - Tip: "When a church closes, its records don't just disappear. They're often transferred to a parent diocese, a historical society, or a church it merged with. This is a key avenue to explore."
+    - Encourage: "Genealogy can be frustrating. It's okay to take breaks when you hit a wall. Come back to it with fresh eyes, and you might see something you missed before."
+  -->
+</body>
+</html>

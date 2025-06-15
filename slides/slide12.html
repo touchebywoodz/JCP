@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genealogy Clues: Church Records</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f0f0f0;
+      font-family: 'Lato', sans-serif, 'Heiti SC', 'Microsoft YaHei';
+    }
+
+    .slide {
+      width: 1280px;
+      height: 720px;
+      background-color: #ffffff;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 40px 60px;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border-bottom: 3px solid #D4AF37;
+      padding-bottom: 20px;
+      animation: slideInDown 0.8s ease-out;
+    }
+
+    .title {
+      font-size: 52px; /* Approx 39pt */
+      color: #0A2463;
+      font-weight: 900;
+      margin: 0;
+    }
+    
+    .magnifying-glass {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      border: 6px solid #0A2463;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .magnifying-glass::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 6px;
+      background: #0A2463;
+      bottom: -15px;
+      right: -15px;
+      transform: rotate(45deg);
+    }
+
+    .content-area {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      padding-top: 20px;
+      flex-grow: 1;
+    }
+
+    .column {
+      flex: 1;
+      padding: 0 20px;
+      animation: fadeIn 1s ease-in 0.5s;
+      animation-fill-mode: backwards;
+    }
+    
+    .column:first-child {
+      animation-delay: 0.6s;
+    }
+    
+    .column:last-child {
+      animation-delay: 0.8s;
+    }
+
+    .column h2 {
+      font-size: 36px; /* Approx 27pt */
+      color: #D4AF37;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .column ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .column li {
+      font-size: 28px; /* Approx 21pt, adjusted for better balance */
+      color: #0A2463;
+      line-height: 1.6;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .column li::before {
+      content: '✔';
+      color: #D4AF37;
+      font-weight: bold;
+      margin-right: 15px;
+      font-size: 24px;
+      line-height: 1.6;
+    }
+
+    .placeholder {
+      margin-top: 30px;
+      border: 2px dashed #999;
+      padding: 20px;
+      text-align: center;
+      color: #666;
+      font-size: 20px;
+      font-style: italic;
+      border-radius: 8px;
+      background-color: #fafafa;
+      animation: fadeInUp 0.8s ease-out 1.2s;
+      animation-fill-mode: backwards;
+    }
+
+    /* Animations */
+    @keyframes slideInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="header">
+      <div class="magnifying-glass"></div>
+      <h1 class="title">Using Church Records as Clues</h1>
+    </div>
+
+    <div class="content-area">
+      <div class="column">
+        <h2>Pastor Names Lead To:</h2>
+        <ul>
+          <li>Other families he married/baptized</li>
+          <li>Church histories mentioning him</li>
+          <li>Newspaper articles about his work</li>
+          <li>His own family records</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h2>Church Locations Reveal:</h2>
+        <ul>
+          <li>Migration patterns of your family</li>
+          <li>Neighborhood where they lived</li>
+          <li>Other churches in the area</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="placeholder">
+      [SPACE FOR DEATH RECORD WITH PASTOR NAME]
+    </div>
+  </div>
+
+  <!--
+    SPEAKER NOTES (2 minutes):
+
+    - Opener: "When you find a pastor's name on an ancestor's record, don't just see it as a signature. Think of pastors as genealogy goldmines, connecting points to a much larger community."
+
+    - On Pastor Names: "A pastor's name is a powerful key. For example, Pastor John Smith might have records spanning 30 years and hundreds of families. By researching him, you can find church histories, his own family tree, and even newspaper articles that might mention your ancestors or the community they lived in."
+
+    - On Church Locations: "The church's location is just as important. It pins your family to a specific neighborhood at a specific time. This helps you understand their migration patterns, which in turn helps you search in the right places for other records, like census or land deeds."
+
+    - Tip: "Here's a practical tip: Map out all the churches in the neighborhood where your ancestor lived. Families often switched between nearby churches due to language, a new pastor, or convenience. Your family might appear in the records of several of them."
+
+    - Closer: "So, the next time you see a pastor's name or a church address, treat it like a major clue. It can unlock entire branches of your family tree."
+  -->
+
+</body>
+</html>
