@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baptism & Membership Records</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    .slide {
+      width: 1280px;
+      height: 720px;
+      background: #ffffff;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.15);
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      padding: 50px 60px;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 48px; /* Approx 36pt for a large heading */
+      color: #0d47a1; /* Deep blue */
+      text-align: center;
+      margin: 0 0 40px 0;
+      font-weight: 700;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #e0e0e0;
+    }
+
+    .content-container {
+      display: flex;
+      flex-grow: 1;
+      gap: 50px;
+    }
+
+    .column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h2 {
+      font-size: 37px; /* Approx 28pt */
+      color: #0d47a1; /* Deep blue */
+      margin: 0 0 20px 0;
+      font-weight: 700;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 30px 0;
+    }
+
+    li {
+      font-size: 32px; /* Approx 24pt */
+      color: #333333; /* Dark text */
+      margin-bottom: 18px;
+      line-height: 1.5;
+      padding-left: 40px;
+      position: relative;
+    }
+
+    li::before {
+      content: '•';
+      color: #1565c0; /* A slightly lighter blue for the bullet */
+      font-size: 40px;
+      position: absolute;
+      left: 0;
+      top: -3px;
+    }
+
+    .image-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #f5f7fa;
+      border: 1px solid #d8e2f1;
+      border-radius: 8px;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .image-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .image-placeholder img {
+      max-width: 100%;
+      max-height: 400px;
+      object-fit: contain;
+      border-radius: 4px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    .image-placeholder p {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #555;
+      font-style: italic;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <h1>Baptism & Membership Records</h1>
+    <div class="content-container">
+      <div class="column">
+        <h2>Baptism Records</h2>
+        <ul>
+          <li>Child's full name and birth date</li>
+          <li>Parents' names (sometimes both!)</li>
+          <li>Baptism date and church</li>
+          <li>Godparents/sponsors</li>
+        </ul>
+        
+        <h2>Membership Rolls</h2>
+        <ul>
+          <li>When people joined the church</li>
+          <li>Transfer letters from other churches</li>
+          <li>Family connections</li>
+        </ul>
+      </div>
+      <div class="column">
+        <div class="image-container">
+          <div class="image-placeholder">
+            <img src="images/baptism_record.jpg" alt="Example of a historical baptism record.">
+            <p>Example of a Baptism Record</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
+    SPEAKER NOTES:
+    Time: 2 minutes for this slide
+
+    - Tip: "Baptism records sometimes give exact birth dates when birth certificates don't exist"
+    - Explain: "Transfer letters show migration patterns - where families moved"
+    - Share: "Godparents were often relatives or very close family friends"
+    - Encourage: "Look for multiple children from same family baptized together"
+  -->
+</body>
+</html>

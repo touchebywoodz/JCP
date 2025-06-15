@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Witnesses Show Family Connections</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f2f5;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .slide {
+      width: 1280px;
+      height: 720px;
+      background-color: #ffffff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      padding: 40px 60px;
+      box-sizing: border-box;
+      background-image:
+        linear-gradient(rgba(58, 124, 165, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(58, 124, 165, 0.05) 1px, transparent 1px);
+      background-size: 50px 50px;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .slide-header {
+        text-align: center;
+        margin-bottom: 30px;
+        animation: fadeIn 0.8s ease-out;
+    }
+
+    .slide-header h1 {
+      font-size: 52px; /* ~39pt */
+      font-weight: 700;
+      color: #3a7ca5; /* Warm Blue */
+      margin: 0;
+    }
+
+    .slide-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      flex-grow: 1;
+      height: calc(100% - 100px);
+    }
+
+    .content-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .content-column.left {
+        animation: fadeIn 1s ease-out 0.2s;
+        animation-fill-mode: backwards;
+    }
+    
+    .content-column.right {
+        animation: fadeIn 1s ease-out 0.4s;
+        animation-fill-mode: backwards;
+    }
+
+    h2 {
+      font-size: 37px; /* 28pt */
+      color: #3a7ca5;
+      margin-top: 0;
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #8d9b6a; /* Green */
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    li {
+      font-size: 32px; /* 24pt */
+      color: #333;
+      margin-bottom: 18px;
+      padding-left: 40px;
+      position: relative;
+      line-height: 1.4;
+    }
+
+    li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      top: -2px;
+      color: #8d9b6a; /* Green */
+      font-size: 40px;
+      line-height: 1;
+    }
+    
+    .list-section {
+        margin-bottom: 30px;
+    }
+
+    .image-container {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .callout {
+      background-color: #eef7ff;
+      border-left: 6px solid #3a7ca5;
+      padding: 25px;
+      border-radius: 0 8px 8px 0;
+      margin-top: auto; /* Pushes to the bottom of the column */
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .callout-icon {
+        flex-shrink: 0;
+    }
+
+    .callout-text {
+      font-size: 30px; /* ~22.5pt */
+      font-weight: 700;
+      color: #1d5276;
+      line-height: 1.3;
+    }
+    
+    .callout-text strong {
+        color: #3a7ca5;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slide">
+    <header class="slide-header">
+      <h1>Witnesses Show Family Connections</h1>
+    </header>
+
+    <main class="slide-content">
+      <div class="content-column left">
+        <div class="list-section">
+            <h2>Wedding Witnesses Often Were:</h2>
+            <ul>
+              <li>Parents or siblings</li>
+              <li>Close family friends</li>
+              <li>Other church members</li>
+              <li>Future spouses for siblings</li>
+            </ul>
+        </div>
+        <div class="list-section">
+            <h2>Baptism Sponsors/Godparents:</h2>
+            <ul>
+              <li>Aunts and uncles</li>
+              <li>Grandparents</li>
+              <li>Close family friends who became "family"</li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="content-column right">
+        <div class="image-container">
+          <img src="images/migration_map.png" alt="Map showing family migration and connection paths">
+        </div>
+        <div class="callout">
+            <div class="callout-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#3a7ca5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </div>
+          <p class="callout-text"><strong>Detective Tip:</strong> Same witness names = family connections!</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!--
+    SPEAKER NOTES:
+    Time: 2 minutes
+
+    - Start with an example: "When you're looking at a marriage record, don't just stop at the bride and groom. Look at the witnesses. If you see Mary Johnson witnessing three different weddings in the same parish, start looking for how she's connected to each of those families."
+    - "This is especially true for godparents, or sponsors, at a baptism. They were often chosen family—aunts, uncles, or very close friends. Tracing the surnames of godparents can open up whole new branches of your tree."
+    - "The key takeaway is that repeated witness names across different records—marriages, baptisms, even burials—are a huge clue. They show tight-knit family and community groups."
+    - "I encourage you to make a simple list or spreadsheet of every witness name you find associated with your ancestors. These names are breadcrumbs. Follow them, and you'll almost certainly find new connections."
+  -->
+
+</body>
+</html>

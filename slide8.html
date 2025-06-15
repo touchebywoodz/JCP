@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meeting Minutes & Other Hidden Gems</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      font-family: 'Lato', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    .slide {
+      width: 1280px;
+      height: 720px;
+      background-color: #ffffff;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('images/archive_library.jpg');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.08;
+      z-index: 0;
+    }
+
+    .slide-content {
+      position: relative;
+      z-index: 1;
+      padding: 50px 70px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 64px; /* Larger than 28pt for a main title */
+      font-weight: 700;
+      color: #1a5276; /* Warm Dark Blue */
+      text-align: center;
+      margin: 0 0 40px 0;
+      animation: fadeInDown 0.8s ease-out;
+    }
+
+    .columns-container {
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 1;
+      gap: 60px;
+    }
+
+    .column {
+      width: 50%;
+      animation: fadeInUp 1s ease-out;
+    }
+    
+    .column:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    h2 {
+      font-size: 38px; /* ~28pt */
+      color: #2471a3; /* Warm Medium Blue */
+      border-bottom: 3px solid #aed6f1; /* Light Blue Accent */
+      padding-bottom: 10px;
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    li {
+      font-size: 32px; /* ~24pt */
+      color: #2c3e50; /* Dark Slate Blue */
+      margin-bottom: 20px;
+      line-height: 1.5;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    li::before {
+      content: '✔';
+      color: #2471a3;
+      font-weight: bold;
+      margin-right: 15px;
+      font-size: 28px;
+      margin-top: 5px;
+    }
+
+    .fun-fact-box {
+      position: absolute;
+      bottom: 40px;
+      left: 70px;
+      right: 70px;
+      background-color: #eaf2f8; /* Very Light Blue */
+      border-left: 10px solid #1a5276;
+      padding: 20px 30px;
+      border-radius: 0 8px 8px 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      animation: slideInUp 1s ease-out 0.5s;
+      animation-fill-mode: backwards;
+    }
+
+    .fun-fact-box p {
+      margin: 0;
+      font-size: 30px;
+      font-style: italic;
+      color: #1a5276;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    .speaker-notes {
+      display: none;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes slideInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="background-image"></div>
+    <div class="slide-content">
+      <h1>Meeting Minutes & Other Hidden Gems</h1>
+      <div class="columns-container">
+        <div class="column">
+          <h2>Meeting Minutes May Mention:</h2>
+          <ul>
+            <li>Families needing assistance</li>
+            <li>Disciplinary actions</li>
+            <li>Church business involving members</li>
+            <li>Special events and celebrations</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2>Other Records:</h2>
+          <ul>
+            <li>Sunday School enrollment</li>
+            <li>Choir membership lists</li>
+            <li>Ladies' auxiliary records</li>
+          </ul>
+        </div>
+      </div>
+      <div class="fun-fact-box">
+        <p>Fun Fact: Churches kept records on EVERYTHING!</p>
+      </div>
+    </div>
+  </div>
+
+  <!--
+    SPEAKER NOTES (2 minutes):
+    - Humor: "Churches were like the Facebook of their time - they recorded everything! Who was 'friends' with who, who got 'unfriended' or disciplined... it's all there."
+    - Tip: "When you see disciplinary records, don't just see the negative. These often name spouses, parents, or siblings who came to speak on their behalf, revealing valuable family connections."
+    - Explain: "Pay special attention to Ladies' auxiliary records. These were often run by women for women, and they frequently list members by their married AND maiden names, a huge clue for genealogists."
+    - Encourage: "It's easy to skip over what looks like boring administrative records, but as you can see, they are filled with hidden gems that paint a rich picture of our ancestors' community lives. Don't overlook them!"
+  -->
+  <div class="speaker-notes">
+    <h2>SPEAKER NOTES (2 minutes)</h2>
+    <ul>
+      <li><b>Humor:</b> "Churches were like the Facebook of their time - they recorded everything! Who was 'friends' with who, who got 'unfriended' or disciplined... it's all there."</li>
+      <li><b>Tip:</b> "When you see disciplinary records, don't just see the negative. These often name spouses, parents, or siblings who came to speak on their behalf, revealing valuable family connections."</li>
+      <li><b>Explain:</b> "Pay special attention to Ladies' auxiliary records. These were often run by women for women, and they frequently list members by their married AND maiden names, a huge clue for genealogists."</li>
+      <li><b>Encourage:</b> "It's easy to skip over what looks like boring administrative records, but as you can see, they are filled with hidden gems that paint a rich picture of our ancestors' community lives. Don't overlook them!"</li>
+    </ul>
+  </div>
+</body>
+</html>
